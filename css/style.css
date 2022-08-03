@@ -1,0 +1,196 @@
+@import url(css/content.css);
+:root{
+    --bluelight:#4c9eff;
+    --bluedeep:#0075ff;
+    --whitelight:#EDF3FA;
+    --white: #FBFDFF;
+    --textdark:#687790;
+}
+@font-face{
+    src: url(fonts/Poppins/Poppins-Black.ttf);
+    font-family: poppins;
+}
+@font-face{
+    src: url(fonts/Poppins/Poppins-Light.ttf);
+    font-family: poppinslight;
+}
+@font-face{
+    src: url(fonts/Poppins/Poppins-Medium.ttf);
+    font-family: poppinsmed;
+}
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--whitelight);
+}
+/* sidemenu beginning */
+#sidemenu{
+    width: 250px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+.logo h1{
+    font-size: 50px;
+    color: var(--bluedeep);
+    font-family: monospace;
+}
+nav{
+    padding-top: 30px;
+}
+.fa{
+    margin-right: 10px;
+    font-size: 1.1rem;
+    display: inline-block;
+    width: 20px;
+}
+.active{
+    background: var(--bluedeep);
+    border-left: 5px solid var(--white);
+    padding: 15px 30px 15px 25px;
+    border-radius: 0px 10px 10px 0px;
+    color: white;
+}
+nav a{
+    display: block;
+    list-style: none;
+    color: var(--textdark);
+    text-decoration: none;
+    font-family: poppinsmed;
+    font-size: 16px;
+    margin-top: 10px;
+    padding: 15px 30px;
+    transition: all 0.3s ease-in-out;
+}
+nav a:hover{
+    background: var(--bluedeep);
+    border-left: 5px solid var(--white);
+    padding: 15px 30px 15px 25px;
+    border-radius: 0px 10px 10px 0px;
+    color: white;
+}
+/* sidemenu ending*/
+header{
+    margin-left: 250px;
+    padding: 10px;
+    background-color: var(--white);
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.075);
+}
+.search-area{
+    display: inline-block;
+    width: 50%;
+    transition: all .5s ease-in-out;
+}
+.search-area i{
+    color: #aabbda; 
+   
+}
+.search-area input{
+    background: transparent;
+    border: transparent;
+    font-size: 1.1rem;
+    color: var(--textdark);
+    padding: 1px;
+    font-weight: 200;
+    width: 80%;
+}
+.search-area input:hover{
+    background: rgb(238, 237, 237);
+}
+.user-area{
+    display: inline-block;
+    float: right;
+    /* padding: 20px; */
+}
+.user-area a{
+    display: inline-block;
+    padding-right: 20px;
+    text-decoration: none;
+    vertical-align: top;
+    height: 30px;
+}
+.user-img{
+    background: url(image/image-jonathan.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+}
+.fa-caret-down{
+    position: relative;
+    top: -8px;
+}
+input:focus,
+textarea:focus{
+    outline: none;
+}
+.close-up{
+    margin: 10px;
+    margin-left: 160px;
+}
+.profile{
+    position: absolute;
+    width: 200px;
+    top: 60px;
+    right: 20px;
+    background-color: var(--whitelight);
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+    display: none;
+}
+.profile h3{
+    font-family: poppinsmed;
+    color: var(--textdark);
+    text-align: center;
+    font-size: 16px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(180, 177, 177, 0.767);
+}
+.profile p{
+    font-family: poppinslight;
+    color: var(--textdark);
+    text-align: center;
+    font-size: 12px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(180, 177, 177, 0.767);
+}
+.profile ul{
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+.profile ul li{
+    list-style: none;
+    margin-bottom: 15px;
+    margin-left: 60px;
+    transition: all 0.2s ease-in-out;
+}
+.profile ul li:hover{
+    padding: 6px;
+}
+.profile a:hover{
+    font-size: 14px;
+}
+.profile a{
+    text-decoration: none;
+    font-family: poppinsmed;
+    font-size: 12px;
+    color: var(--textdark);
+}
+.profile a i{
+    font-size: 14px;
+    margin-right: 0px;
+}

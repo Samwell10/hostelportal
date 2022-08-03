@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--fontawesome file-->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <!--bootstrap file-->
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <!--stylesheet file-->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+    <link rel="shortcut icon" href="image/favicon.PNG" type="image/x-icon"> 
+</head>
+<body>
+    <!--beginning of the side bar-->
+    <section id="sidemenu">
+        <div class="logo"><h1>H</h1></div>
+        <nav>
+            <ul>
+                <a href="#" class="active"><i class="fa fa-home" aria-hidden="true"></i>Home</a>
+                <a href="#"><i class="fa fa-registered" aria-hidden="true"></i>Room Registered</a>
+                <a href="#"><i class="fa fa-building" aria-hidden="true"></i>Room Available</a>
+                <a href="#"><i class="fa fa-graduation-cap" aria-hidden="true"></i>Student Registered</a>
+            </ul>
+        </nav>
+    </section>
+    <!--Ending of the side bar-->
+    <!-- beginning of header containning the search bar and user profile -->
+    <header>
+        <div class="search-area">
+            <i class="fa fa-search" aria-hidden="true"></i>
+            <input type="text" name="" value="">
+        </div>
+        <div class="user-area" >
+             <a href="#" class="user">
+                 <div class="user-img"></div>
+                 <i class="fa fa-caret-down" aria-hidden="true"></i>
+             </a>
+            
+             <div class="profile">
+                <i class="fa fa-caret-up close-up" aria-hidden="true"></i>
+                <!-- <div class="user-img"></div> -->
+                <h3>Mr Adewale Ben</h3>
+                <p>STA/19/2000</p>
+                <P>Luke Hall</P>
+                <ul>
+                    <li><a href="#"><i class="fa fa-edit"></i>Edit Profile</a></li>
+                    <li><a href="#"><i class="fa fa-eye"></i>View Profile</a></li>
+                    <li><a href="#"><i class="fa fa-power-off"></i>Log out</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="profile">
+            <!-- <div class="user-img"></div> -->
+            <h3>Mr Adewale Ben</h3>
+            <p>STA/19/2000</p>
+            <P>Luke Hall</P>
+            <ul>
+                <li><a href="#"><i class="fa fa-edit"></i>Edit Profile</a></li>
+                <li><a href="#"><i class="fa fa-eye"></i>View Profile</a></li>
+                <li><a href="#"><i class="fa fa-power-off"></i>Log out</a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- ending of the header -->
+    <!-- beginning of main cointent -->
+    <section class="content-area">
+        <div class="heading">
+            <h1>Dashboard</h1>
+            <p>Welcome to your Hostel Portal.</p>
+        </div>
+        <div class="cards">
+            <div class="card">
+               <div>
+                   <h1>66</h1>
+                   <p>Room Registered</p>
+               </div> 
+               <div>
+                   <i class="fa fa-registered" aria-hidden="true"></i>
+               </div>
+            </div>
+            <div class="card">
+                <div>
+                    <h1>24</h1>
+                    <p>Room Available</p>
+                </div> 
+                <div>
+                    <i class="fa fa-building" aria-hidden="true"></i>
+                </div>
+             </div>
+             <div class="card click">
+                <div>
+                    <h1>210</h1>
+                    <p>Student Registered</p>
+                </div> 
+                <div>
+                    <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                </div>
+             </div>
+        </div>
+        <div class="recent">
+            <h4>Recently Registered Student</h4>
+        </div>
+        <div class="table-content">
+        <table>
+            
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Matric NO</th>
+                    <th>Gender</th>
+                    <th>Hostel Name</th>
+                    <th>Room NO</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Adewale John</td>
+                    <td>BU12GOC1234</td>
+                    <td>Male</td>
+                    <td>Luke</td>
+                    <td>24</td>
+                    <td><select name="action" class="select">
+                        <option value="0">Status</option>
+                        <option value="1">Confirm</option>
+                        <option value="2">Revoke</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td>Olusegun Peter</td>
+                    <td>BU12SAT1564</td>
+                    <td>Male</td>
+                    <td>Mark</td>
+                    <td>66</td>
+                    <td><select name="action" class="select">
+                        <option value="0">Status</option>
+                        <option value="1">Confirm</option>
+                        <option value="2">Revoke</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td>John Simon</td>
+                    <td>BU12MAT2364</td>
+                    <td>Male</td>
+                    <td>Mathew</td>
+                    <td>34</td>
+                    <td><select name="action" class="select">
+                        <option value="0">Status</option>
+                        <option value="1">Confirm</option>
+                        <option value="2">Revoke</option>
+                    </select></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    </section>
+    <script src="../Portal/style.js"></script>
+</body>
+</html>
